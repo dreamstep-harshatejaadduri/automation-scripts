@@ -68,8 +68,7 @@ VALIDATE $? "Replacing old build"
 
 # -- Restarting Server --
 pm2 restart 
-VALIDATE 4? "Restart"
-
+VALIDATE $? "Restart"
 
 pm2 log
 
